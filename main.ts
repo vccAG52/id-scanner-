@@ -6,18 +6,16 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.showString("Parents: Rose and Michael")
         basic.showString("Welcome!")
     }
-    if (receivedNumber == 1138) {
+    if (receivedNumber == 11638) {
         basic.showString("ID# 11638")
         basic.showString("Cipriano, Coralyn")
         basic.showString("Age 8")
         basic.showString("Parents: Rose and Michael")
         basic.showString("Do not come in without permission.")
+        radio.sendString("PERSON IN ROOM!")
     }
 })
 input.onGesture(Gesture.Shake, function () {
     radio.sendNumber(493)
-    radio.sendString("PERSON IN ROOM!")
 })
-basic.forever(function () {
-	
-})
+radio.setGroup(562)
